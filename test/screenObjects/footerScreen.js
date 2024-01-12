@@ -1,7 +1,5 @@
-const { $ } = require('@wdio/globals');
-const Screen = require('./test/screenObjects/screen.js');
 
-class FooterScreen extends Screen {
+class FooterScreen {
 
     get homeButton () {
         return $('//android.widget.Button[@content-desc="Home"]')

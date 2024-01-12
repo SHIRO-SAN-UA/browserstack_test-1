@@ -1,9 +1,6 @@
 const faker = require('@faker-js/faker');
-const footerScreen = require('./test/screenObjects/footerScreen.js');
-const loginScreen = require('./test/screenObjects/loginScreen.js');
-
-const randomEmail = faker.internet.email();
-const randomPassword = faker.internet.password({length: 8})
+const footerScreen = require('../screenObjects/footerScreen.js')
+const loginScreen = require('../screenObjects/loginScreen.js')
 
 describe("User Login", () => {
     beforeEach(async () => {
@@ -14,7 +11,7 @@ describe("User Login", () => {
     // });
 
       it("should allow login with valid credentials", async () => {
-        await loginScreen.login(randomEmail, randomPassword);
+        await loginScreen.login('RickSanches@pentagon.com', '12345678');
         expect(loginScreen.loginPopupBox).toBeDisplayed();
         expect(loginScreen.loginAlert).toBeDisplayed();
         expect(loginScreen.loginAlertMessage).toHaveText('You are logged in!');

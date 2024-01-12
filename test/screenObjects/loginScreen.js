@@ -1,14 +1,12 @@
-const { $ } = require('@wdio/globals');
-const Screen = require('./test/screenObjects/screen.js');
 
-class LoginScreen extends Screen {
+class LoginScreen {
     // Login Tab
     get loginTab () {
         return $('(//android.widget.TextView[@text="Login"])[1]');
     };
 
     get emailInputField () {
-        return $('//android.widget.EditText[@content-desc="input-email"]');
+        return $('~input-email');
     };
 
     get passwordInputField () {
@@ -23,15 +21,15 @@ class LoginScreen extends Screen {
         return $('//android.widget.FrameLayout[@resource-id="android:id/content"]');
     };
 
-    get loginAlert() {
+    get loginAlert () {
         return $('//android.widget.TextView[@resource-id="android:id/alertTitle"]');
     };
 
-    get loginAlertMessage() {
+    get loginAlertMessage () {
         return $('//android.widget.TextView[@resource-id="android:id/message"]');
     };
 
-    get loginPopupBoxButton() {
+    get loginPopupBoxButton () {
         return $('//android.widget.Button[@resource-id="android:id/button1"]');
     };
 
@@ -49,14 +47,14 @@ class LoginScreen extends Screen {
     };
 
     async login(email, password) {
-        await this.emailInputField.setvalue(email);
-        await this.passwordInputField.setvalue(password);
+        await this.emailInputField.setValue(email);
+        await this.passwordInputField.setValue(password);
         await this.loginSubmitButton.click();
     };
 
     async signup(email, password) {
-        await this.emailInputField.setvalue(email);
-        await this.passwordInputField.setvalue(password);
+        await this.emailInputField.setValue(email);
+        await this.passwordInputField.setValue(password);
         //await this.confirmPasswordField.setvalue(password);
         await this.signupSubmitButton.click();
     };
