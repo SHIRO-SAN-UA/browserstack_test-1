@@ -1,5 +1,5 @@
 const { $ } = require('@wdio/globals');
-const Screen = require('./screen');
+const Screen = require('./test/screenObjects/screen.js');
 
 class LoginScreen extends Screen {
     // Login Tab

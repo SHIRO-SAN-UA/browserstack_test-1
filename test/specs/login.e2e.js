@@ -1,6 +1,6 @@
 const faker = require('@faker-js/faker');
-const footerScreen = require('../screenObjects/footerScreen');
-const loginScreen = require('../screenObjects/loginScreen');
+const footerScreen = require('./test/screenObjects/footerScreen.js');
+const loginScreen = require('./test/screenObjects/loginScreen.js');
 
 const randomEmail = faker.internet.email();
 const randomPassword = faker.internet.password({length: 8})
