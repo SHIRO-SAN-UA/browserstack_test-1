@@ -2,8 +2,8 @@
 
 ## Usage
 1. Clone repo and install all dependencies.
-2. Update wdio.conf.js with your actual Browaserstack credentials
-3. This project is set up to run Pixel 3 as a default and Galaxy S10 as an additional testing device. Change, or add more devices in wdio.conf.js.
+2. Update wdio.conf.js with your actual Browserstack credentials
+4. This project is set up to run Pixel 3 as a default and Galaxy S10 as an additional testing device. Change, or add more devices in wdio.conf.js.
 
 ## Structure
 1. This project uses POM model

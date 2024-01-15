@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const browserstackAppId = process.env.BROWSERSTACK_APP_ID;
 
 exports.config = {
@@ -40,6 +42,8 @@ exports.config = {
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
+
+  reporters: ["spec"],
 
   framework: 'mocha',
   mochaOpts: {
