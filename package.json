@@ -7,6 +7,8 @@
     "@wdio/spec-reporter": "^8.1.0"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "test:default_pixel_3": "wdio run ./wdio.conf.js",
+    "test:galaxyS10": "TEST_DEVICE=GalaxyS10 wdio run ./wdio.conf.js"
   }
+
 }

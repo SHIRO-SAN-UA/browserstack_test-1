@@ -55,7 +55,7 @@ class LoginScreen {
     async signup(email, password, passwordconfirm) {
         await this.emailInputField.setValue(email);
         await this.passwordInputField.setValue(password);
-        await this.confirmPasswordField.setvalue(passwordconfirm);
+        await this.confirmPasswordField.setValue(passwordconfirm);
         await this.signupSubmitButton.click();
     };
 
