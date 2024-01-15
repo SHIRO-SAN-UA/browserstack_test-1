@@ -52,10 +52,10 @@ class LoginScreen {
         await this.loginSubmitButton.click();
     };
 
-    async signup(email, password) {
+    async signup(email, password, passwordconfirm) {
         await this.emailInputField.setValue(email);
         await this.passwordInputField.setValue(password);
-        //await this.confirmPasswordField.setvalue(password);
+        await this.confirmPasswordField.setvalue(passwordconfirm);
         await this.signupSubmitButton.click();
     };
 
