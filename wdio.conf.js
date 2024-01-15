@@ -47,7 +47,7 @@ exports.config = {
     timeout: 20000
   },
 };
-// Device selection based on environment variable, default to Pixel 4
+// Device selection based on environment variable, default to Pixel 3
 if (process.env.TEST_DEVICE === 'GalaxyS10') {
   exports.config.capabilities = [exports.config.capabilities[1]]; // Samsung Galaxy S10
 } else {

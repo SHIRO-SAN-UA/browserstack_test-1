@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test:default_pixel_3": "wdio run ./wdio.conf.js",
-    "test:galaxyS10": "TEST_DEVICE=GalaxyS10 wdio run ./wdio.conf.js"
+    "test:galaxy_S10": "TEST_DEVICE=GalaxyS10 wdio run ./wdio.conf.js"
   }
 
 }

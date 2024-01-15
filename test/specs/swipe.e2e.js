@@ -5,9 +5,6 @@ describe("Swipe functionality", () => {
   beforeEach(async () => {
     await footerScreen.swipeButton.click();
   });
-  afterEach(async () => {
-    await footerScreen.homeButton.click();
-  });
   it("should allow to swipe right to left", async () => {
     expect(await swipeScreen.sliderCard1).toBeDisplayed();
 
@@ -64,6 +61,5 @@ describe("Swipe functionality", () => {
 
     // Add assertions here to validate the result of the swipe action
     expect(await swipeScreen.webdriverLogo).toBeDisplayed();
-
   });
 });
