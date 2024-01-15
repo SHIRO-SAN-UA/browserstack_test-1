@@ -1,8 +1,8 @@
-const browserstackAppId = process.env.BROWSERSTACK_APP_ID || 'bs://e75ad1358132ab1718063da8de775b70668f9f28';
+const browserstackAppId = process.env.BROWSERSTACK_APP_ID;
 
 exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME || 'feffer_xkDtLU',
-  key: process.env.BROWSERSTACK_ACCESS_KEY || 'yMGzD8NgBMNiADaGVsvq',
+  user: process.env.BROWSERSTACK_USERNAME,
+  key: process.env.BROWSERSTACK_ACCESS_KEY,
 
   updateJob: false,
   specs: [
